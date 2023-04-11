@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+html,body,div,input,li,span,ul,h2,p,h1{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+a:hover{
+    color: blue;
+}
+nav{
+    font-weight: bold;
+    .container{
+        display: flex;
+        background-color: red;
+        font-size: medium;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        color: white;
+        font-weight: bold;
+        .left{
+            display: flex;
+        }
+        .right{
+            display: flex;
+        }
+        li{
+            padding: 10px;
+        }
+        a:hover{
+            color: blue;
+        }
+    }
+}
+.ttitlebar{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+        display: flex;
+        align-items: center;
+        img{
+            height: 100px;
+        }
+        .text{
+            div{
+                padding: 5px;
+                font-size: x-small;
+                font-weight: 300;
+            }
+            .name{
+                font-size: larger;
+                font-weight: bold;
+                span{
+                    color: red;
+                }
+            }
+        }
+    }
+    .title{
+        font-size: larger;
+        font-weight: normal;
+    }
+    .counter{
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        background-image: linear-gradient(to bottom left,red, white);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+            color: white;
+            font-size: smaller;
+            font-weight: bold;
+        }
+    }
+}
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        width: fit-content;
+        background-color:#F2E8E9;
+        border-radius: 10px;
+        align-items: center;
+        input{
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            width: 400px;
+        }
+        button{
+            width: 200px;
+            // height: 30px;
+            padding: 10px;
+            margin: 10px;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+        }
+    }
+}
