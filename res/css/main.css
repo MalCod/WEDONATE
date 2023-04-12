@@ -56,6 +56,7 @@ nav .container a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .ttitlebar .logo {
   display: flex;
@@ -65,7 +66,7 @@ nav .container a:hover {
   height: 100px;
 }
 .ttitlebar .logo .text div {
-  padding: 5px;
+  padding: 0 5px;
   font-size: x-small;
   font-weight: 300;
 }
@@ -77,6 +78,9 @@ nav .container a:hover {
   color: red;
 }
 .ttitlebar .title {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: larger;
   font-weight: normal;
 }
@@ -99,9 +103,9 @@ nav .container a:hover {
 .form-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
-.form-container form {
+.form-container .form-form {
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -109,19 +113,42 @@ nav .container a:hover {
   width: fit-content;
   background-color: #F2E8E9;
   border-radius: 10px;
-  align-items: center;
+  align-items: start;
 }
-.form-container form input {
+.form-container .form-form .genter input {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.form-container .form-form label {
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.form-container .form-form input {
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
   width: 400px;
 }
-.form-container form button {
+.form-container .form-form button {
   width: 200px;
   padding: 10px;
   margin: 10px;
   color: white;
   background-color: black;
   border-radius: 10px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.center button {
+  width: 200px;
+  height: 30px;
+  margin: 20px;
+  color: white;
+  background-color: red;
+  border-color: rgb(198, 15, 15);
 }/*# sourceMappingURL=main.css.map */

@@ -51,6 +51,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     .logo{
         display: flex;
         align-items: center;
@@ -59,7 +60,7 @@ nav{
         }
         .text{
             div{
-                padding: 5px;
+                padding: 0 5px ;
                 font-size: x-small;
                 font-weight: 300;
             }
@@ -73,6 +74,9 @@ nav{
         }
     }
     .title{
+        position: absolute;
+        left: 50% ;
+        transform: translate(-50%,-50%);
         font-size: larger;
         font-weight: normal;
     }
@@ -95,15 +99,24 @@ nav{
 .form-container{
     display: flex;
     align-items: center;
-    justify-content: center;
-    form{
+    justify-content: space-around;
+    .form-form{
         display: flex;
         flex-direction: column;
         padding: 20px;
         width: fit-content;
         background-color:#F2E8E9;
         border-radius: 10px;
-        align-items: center;
+        align-items:start;
+        .genter{
+            input{
+                width: fit-content;    
+            }
+        }
+        label{
+            padding: 0 10px;
+            margin: 0 10px;
+        }
         input{
             padding: 10px;
             margin: 10px;
@@ -119,5 +132,19 @@ nav{
             background-color: black;
             border-radius: 10px;
         }
+    }
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    button{
+        width: 200px;
+        height: 30px;
+        margin: 20px;
+        color: white;
+        background-color: red;
+        border-color: rgb(198, 15, 15);
     }
 }
